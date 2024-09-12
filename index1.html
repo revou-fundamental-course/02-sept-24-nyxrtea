@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Triangle Calculator</h1>
+        </header>
+        <img src="images.jpg" alt="Triangle" class="triangle">
+        <form id="triangleForm">
+            <div id="sideFields">
+                <div class="form-group">
+                    <label for="sideA">Side A:</label>
+                    <input type="number" id="sideA" name="sideA" placeholder="Enter side A">
+                </div>
+                
+                <div class="form-group">
+                    <label for="sideB">Side B:</label>
+                    <input type="number" id="sideB" name="sideB" placeholder="Enter side B">
+                </div>
+                
+                <div class="form-group">
+                    <label for="sideC">Side C:</label>
+                    <input type="number" id="sideC" name="sideC" placeholder="Enter side C">
+                </div>
+            </div>
+
+            <div id="baseHeightFields" class="form-group" style="display: none;">
+                <div class="form-group">
+                    <label for="base">Base:</label>
+                    <input type="number" id="base" name="base" placeholder="Enter base">
+                </div>
+                
+                <div class="form-group">
+                    <label for="height">Height:</label>
+                    <input type="number" id="height" name="height" placeholder="Enter height">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="calculationType">Select Calculation:</label>
+                <select id="calculationType" name="calculationType">
+                    <option value="area-base-height">Calculate Area (Base & Height)</option>
+                    <option value="perimeter">Calculate Perimeter</option>
+                </select>
+            </div>
+            
+            <div class="button-container">
+                <button type="button" id="calculateButton">Calculate</button>
+                <button type="button" id="resetButton">Reset</button>
+            </div>
+        </form>
+        
+        <div id="results">
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
